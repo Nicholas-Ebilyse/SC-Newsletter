@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-base: #fcf9f8;
+  --color-highlighter: #fbd800;
+  --color-label: #006685;
+  
+  --color-surface-low: #f1edea;
+  --color-tertiary: #e2e8f0;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-base);
+    color: #1a1a1a;
+  }
+}
+
+@layer components {
+  .text-label-caps {
+    @apply uppercase tracking-[0.05em] text-label;
+  }
+  
+  .headline {
+    @apply font-display leading-[0.9] tracking-[-0.02em] uppercase relative z-10;
+  }
+  
+  .card {
+    @apply bg-surface-low p-6 border-none rounded-none relative;
+  }
+  
+  .chip {
+    @apply bg-tertiary text-label text-[10px] font-semibold py-1 px-2.5 rounded-lg inline-flex items-center;
+  }
+  
+  .metallic-btn {
+    @apply rounded-2xl text-white font-bold uppercase tracking-[0.05em] cursor-pointer transition-transform duration-200 shadow-[0_4px_12px_rgba(110,94,0,0.2)] hover:-translate-y-[2px];
+    background: linear-gradient(135deg, #6e5e00, #fbd800);
+  }
+  
+  .glass-float {
+    @apply absolute backdrop-blur-md bg-white/40 p-3 rounded-xl z-20 shadow-[0_8px_32px_rgba(0,0,0,0.05)];
+  }
+}
