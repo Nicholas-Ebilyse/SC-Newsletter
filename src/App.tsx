@@ -4,29 +4,29 @@
  */
 
 import React from 'react';
-import { Play, LineChart, Sparkles, User, AudioLines, ArrowRight, CornerDownRight, CheckCircle2 } from 'lucide-react';
+import { Play, LineChart, Sparkles, User, AudioLines, ArrowRight, CornerDownRight, CheckCircle2, Database, Network, Megaphone, Brain, Cpu } from 'lucide-react';
 
 export default function App() {
   return (
     <div className="font-sans min-h-screen selection:bg-highlighter selection:text-black scroll-smooth">
       {/* HEADER */}
-      <header className="relative pt-24 pb-32 px-6 md:px-12 mx-auto max-w-7xl overflow-hidden">
+      <header className="relative pt-24 pb-32 px-6 md:px-12 overflow-hidden bg-[url('./illustration-home-new.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px] z-0" />
         {/* Asymmetrical decorative bg element */}
-        <div className="absolute top-0 right-0 w-full md:w-2/3 h-[120%] bg-white/60 -skew-x-12 -z-10 origin-top-right blur-3xl opacity-50" />
+        <div className="absolute top-0 right-0 w-full md:w-2/3 h-[120%] bg-surface-low/80 -skew-x-12 z-0 origin-top-right blur-3xl opacity-50" />
         
-        <div className="flex flex-col gap-8 md:gap-16 relative z-10">
+        <div className="flex flex-col gap-8 md:gap-16 relative z-10 max-w-7xl mx-auto">
           <div className="flex flex-wrap gap-4 md:gap-8 items-center text-label-caps text-xs md:text-sm font-semibold">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-highlighter inline-block shadow-sm"></span>
-              EDITION N°1
+              EDITION N°3
             </span>
-            <span>PREMIÈRE ÉDITION</span>
+            <span>TROISIÈME ÉDITION</span>
             <span>ÉCOSYSTÈME TECH BFC</span>
           </div>
           
           <h1 className="headline text-5xl md:text-7xl lg:text-[7rem] font-bold text-slate-900 mix-blend-multiply -ml-1 md:-ml-2">
-            SILICON COMTÉ | <br />
-            NEWSLETTER MENSUELLE
+            <img src="./logo-siliconcomte.png" alt="Silicon Comté Logo" className="w-full max-w-[250px]" />
           </h1>
         </div>
       </header>
@@ -40,19 +40,19 @@ export default function App() {
                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Nicholas" alt="Nicholas Goodwin" className="w-full h-full object-cover" />
               </div>
               <div>
-                <p className="font-bold font-sans text-lg text-slate-900">Nicholas Goodwin</p>
-                <p className="text-label-caps text-[10px] font-semibold mt-1">Responsable Commission Newsletter</p>
+                <p className="font-bold font-sans text-lg text-slate-900">Antoine Bouet</p>
+                <p className="text-label-caps text-[10px] font-semibold mt-1">Président</p>
               </div>
             </div>
           </div>
           <div className="md:w-2/3 card !bg-transparent !p-0">
-            <h2 className="headline text-4xl md:text-5xl mb-10 text-slate-900 !normal-case">Le Mot du Rédacteur</h2>
+            <h2 className="headline text-4xl md:text-5xl mb-10 text-slate-900 !normal-case">ÉDITORIAL (Le Mot du Président)</h2>
             <div className="text-slate-600 leading-relaxed max-w-2xl text-base md:text-lg space-y-6">
               <p className="text-xl md:text-2xl font-light text-slate-900 italic tracking-tight border-l-4 border-highlighter pl-6 py-2">
                 "Apprendre plus pour mieux valoriser."
               </p>
               <p>
-                Notre vision est d'utiliser l'IA pour connecter, développer et libérer le 'super-pouvoir' de notre dynamique écosystème franc-comtois. Nous redéfinissons la façon dont l'information circule à travers notre réseau, traitant chaque mise à jour comme un nœud vital dans un graphe d'innovation régionale en constante expansion.
+                L'association Silicon Comté se redynamise. Notre objectif est de fédérer l'écosystème local en nous concentrant sur l'événementiel et l'innovation numérique. Apprenons à nous connaître pour mieux nous valoriser, en partageant nos expertises à travers nos ateliers et nos rencontres.
               </p>
             </div>
           </div>
@@ -71,19 +71,23 @@ export default function App() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 pt-8">
              <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-0 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
-               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Relance de l'Annuaire</h3>
-               <p className="text-slate-700 leading-relaxed">Transformation de l'annuaire en observatoire du numérique local. Création automatisée par l'IA et limite stricte à 2 compétences par profil pour plus de clarté.</p>
+               <Database className="w-8 h-8 text-secondary mb-6 opacity-80" />
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Annuaire des compétences</h3>
+               <p className="text-slate-700 leading-relaxed">Transformation de notre outil en un véritable observatoire du numérique local. Sa création est désormais automatisée par l'IA, avec une limite stricte de deux compétences par profil pour garantir une clarté maximale aux recruteurs.</p>
              </div>
              
              <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-16 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
-               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Nouveau Réseau de Communication</h3>
-               <p className="text-slate-700 leading-relaxed">Fermeture de l'ancien réseau social. Transition officielle vers Slack pour une communication plus fluide entre adhérents.</p>
+               <Network className="w-8 h-8 text-secondary mb-6 opacity-80" />
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">La force du collectif</h3>
+               <p className="text-label-caps mb-4 opacity-70">L'architecture de la Co-Adhésion</p>
+               <p className="text-slate-700 leading-relaxed">Mise en place d'une passerelle unique reliant trois acteurs majeurs : Silicon Comté pour l'animation de terrain, la French Tech BFC pour le rayonnement national, et la Fabrique Numérique pour le lien social et institutionnel.</p>
              </div>
              
              <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-32 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
-               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Synergies Écosystème</h3>
-               <p className="text-label-caps mb-4 opacity-70">Projet de Co-adhésion</p>
-               <p className="text-slate-700 leading-relaxed">Mise en place d'une passerelle entre Silicon Comté (terrain), la French Tech BFC (rayonnement) et la Fabrique Numérique Besançon (lien institutionnel).</p>
+               <Megaphone className="w-8 h-8 text-secondary mb-6 opacity-80" />
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Nouvelle Dynamique</h3>
+               <p className="text-label-caps mb-4 opacity-70">De Communication</p>
+               <p className="text-slate-700 leading-relaxed">Lancement de notre nouveau Blog pour relayer l'expertise de nos membres et centralisation de notre communauté sur notre page LinkedIn officielle.</p>
              </div>
           </div>
         </div>
@@ -101,7 +105,7 @@ export default function App() {
              <div className="absolute top-0 right-0 w-32 h-32 bg-highlighter/10 blur-3xl -z-10 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
              <div className="flex justify-between items-start mb-24 relative z-10">
                <span className="text-label-caps text-xs font-bold opacity-60">Concept 01</span>
-               <span className="chip">Cafés IA</span>
+               <Brain strokeWidth={1.5} className="text-label opacity-70 w-6 h-6" />
              </div>
              <h3 className="headline text-3xl font-bold mb-6 text-slate-900 !normal-case">Prompt du Mois</h3>
              <div className="text-slate-700 italic text-sm bg-white/80 p-5 border-none shadow-none relative z-10">
@@ -217,7 +221,7 @@ export default function App() {
               { id: '01', title: 'Badge Adhérent exclusif & Backlink annuaire.', highlight: true },
               { id: '02', title: 'Opportunité d\'accueillir un "Digital Apéro" dans vos locaux.' },
               { id: '03', title: 'Accès au Pot de Rentrée réservé aux membres.' },
-              { id: '04', title: 'Réductions sur les événements et accès au nouveau Slack.' }
+              { id: '04', title: 'Réductions sur les événements.' }
             ].map((item, i) => (
               <div key={i} className="flex gap-6 items-start group bg-white shadow-sm p-6 relative z-10 hover:-translate-y-1 transition-transform duration-300">
                 <div className="headline text-3xl text-slate-300 font-bold pt-1 !normal-case">{item.id}</div>
@@ -252,7 +256,7 @@ export default function App() {
                 <div>
                   <h3 className="headline text-3xl mb-4 text-slate-900">DIGITAL APÉRO</h3>
                   <span className="chip mb-4">IA Agentique & Éthique</span>
-                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Challenges et opportunités pour les systèmes IA agentiques éthiques."</strong><br />Une discussion profonde sur le futur de l'autonomie machine.</p>
+                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Challenges et opportunités pour les systèmes IA agentiques éthiques."</strong><br />Lieu : Le Comptoir Général (14 Rue d'Alsace). Format : Conférence de 30–45 minutes pour une trentaine de personnes, suivie d'échanges.</p>
                 </div>
              </div>
           </div>
@@ -266,7 +270,7 @@ export default function App() {
                 <div>
                   <h3 className="headline text-3xl mb-4 text-slate-900">CAFÉS IA</h3>
                   <span className="chip mb-4">Au Pixel</span>
-                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"RDV régulier tous les mois au Pixel."</strong><br />Un moment d'échange convivial autour des avancées locales en IA. Venez avec vos prompts !</p>
+                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Rendez-vous mensuel au Pixel."</strong><br />Format de 45 minutes à 1 heure pour échanger autour de l'intelligence artificielle, tester des outils et partager vos meilleurs prompts entre adhérents.</p>
                 </div>
              </div>
           </div>
