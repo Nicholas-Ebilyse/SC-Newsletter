@@ -20,13 +20,13 @@ export default function App() {
               <span className="w-2 h-2 rounded-full bg-highlighter inline-block shadow-sm"></span>
               EDITION N°1
             </span>
-            <span>FIRST EDITION</span>
-            <span>BFC TECH ECOSYSTEM</span>
+            <span>PREMIÈRE ÉDITION</span>
+            <span>ÉCOSYSTÈME TECH BFC</span>
           </div>
           
           <h1 className="headline text-5xl md:text-7xl lg:text-[7rem] font-bold text-slate-900 mix-blend-multiply -ml-1 md:-ml-2">
             Silicon Comté <br />
-            <span className="text-label">Monthly</span> Newsletter <br />
+            Newsletter <span className="text-label">Mensuelle</span> <br />
             <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 mt-6 md:hidden lg:flex lg:mt-8 opacity-90">
               <span className="bg-highlighter px-4 py-2 font-display text-4xl inline-block shadow-none w-fit border-none text-slate-900">
                 N°1
@@ -55,10 +55,10 @@ export default function App() {
             <h2 className="headline text-4xl md:text-5xl mb-10 text-slate-900 !normal-case">Le Mot du Rédacteur</h2>
             <div className="text-slate-600 leading-relaxed max-w-2xl text-base md:text-lg space-y-6">
               <p className="text-xl md:text-2xl font-light text-slate-900 italic tracking-tight border-l-4 border-highlighter pl-6 py-2">
-                "Learn more to valorize better."
+                "Apprendre plus pour mieux valoriser."
               </p>
               <p>
-                Our vision is to use AI to connect, grow, and unleash the 'super power' of our dynamic Franche-Comté ecosystem. We are redefining how information flows through our network, treating every update as a vital node in an ever-expanding graph of regional innovation.
+                Notre vision est d'utiliser l'IA pour connecter, développer et libérer le 'super-pouvoir' de notre dynamique écosystème franc-comtois. Nous redéfinissons la façon dont l'information circule à travers notre réseau, traitant chaque mise à jour comme un nœud vital dans un graphe d'innovation régionale en constante expansion.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function App() {
                <p className="text-slate-600 font-medium mb-8">Écoutez notre mini-podcast de cette édition.</p>
                
                <button className="flex items-center gap-3 bg-slate-900 text-white px-5 py-3 rounded-xl text-sm font-semibold hover:-translate-y-[2px] transition-transform duration-300 w-max shadow-md hover:shadow-lg">
-                 <Play size={16} fill="currentColor" /> Play Episode
+                 <Play size={16} fill="currentColor" /> Écouter l'Épisode
                </button>
              </div>
              <div className="absolute -right-8 -bottom-8 opacity-[0.03] group-hover:opacity-10 group-hover:scale-110 transition-all duration-700">
@@ -141,11 +141,11 @@ export default function App() {
                
                <div className="space-y-6 text-sm font-mono mt-8">
                  <div className="pl-4 border-l-2 border-slate-300 break-words opacity-80">
-                    <span className="text-slate-500 font-bold block mb-2 text-xs uppercase tracking-widest">Member Q:</span>
+                    <span className="text-slate-500 font-bold block mb-2 text-xs uppercase tracking-widest">QUESTION MEMBRE :</span>
                     "Quel outil nocode pour mon prototype?"
                  </div>
                  <div className="pl-4 border-l-2 border-highlighter bg-highlighter/10 p-4 break-words rounded-r-md">
-                    <span className="text-yellow-800 font-bold block mb-2 text-xs uppercase tracking-widest">AI Answer:</span>
+                    <span className="text-yellow-800 font-bold block mb-2 text-xs uppercase tracking-widest">RÉPONSE IA :</span>
                     <span className="text-slate-800 font-sans text-base">Bubble et FlutterFlow sont excellents. Pour des flux IA intégrés, considérez BuildShip ou Make pour l'automatisation.</span>
                  </div>
                </div>
@@ -243,7 +243,7 @@ export default function App() {
                   {item.highlight && (
                     <div className="mt-4 chip border border-black/5">
                        <CheckCircle2 size={12} className="text-label mr-1" />
-                       Digital Asset Included
+                       Actif Numérique Inclus
                     </div>
                   )}
                 </div>
@@ -266,8 +266,8 @@ export default function App() {
                <div className="absolute left-0 top-0 bottom-0 w-1 bg-highlighter transform -translate-x-full group-hover:translate-x-0 transition-transform"></div>
                <div className="w-20 h-20 shrink-0 bg-surface-low flex items-center justify-center font-display text-3xl font-bold text-label bg-tertiary rounded-xl">P1</div>
                <div className="flex-1">
-                 <h3 className="headline text-2xl mb-3 !normal-case">Roles, Tools, and Setup</h3>
-                 <p className="text-slate-600 mb-6 text-lg font-light">Nicholas G. Lead, Visual Design FX? Integration platforms setup in progress.</p>
+                 <h3 className="headline text-2xl mb-3 !normal-case">Rôles, Outils et Configuration</h3>
+                 <p className="text-slate-600 mb-6 text-lg font-light">Nicholas G. Lead, Design Visuel FX ? Configuration des plateformes d'intégration en cours.</p>
                  <div className="flex gap-3">
                    <span className="chip">AssoConnect</span>
                    <span className="chip">Brevo</span>
@@ -279,19 +279,19 @@ export default function App() {
                <div className="absolute left-0 top-0 bottom-0 w-1 bg-highlighter transform -translate-x-full group-hover:translate-x-0 transition-transform"></div>
                <div className="w-20 h-20 shrink-0 bg-surface-low flex items-center justify-center font-display text-3xl font-bold text-label bg-tertiary rounded-xl">P2</div>
                <div className="flex-1">
-                 <h3 className="headline text-2xl mb-3 !normal-case">Next Steps & Coordination</h3>
-                 <p className="text-slate-600 text-lg font-light">Consult other committee members for themes/ideas. Finalize list of membership advantages.</p>
+                 <h3 className="headline text-2xl mb-3 !normal-case">Prochaines Étapes & Coordination</h3>
+                 <p className="text-slate-600 text-lg font-light">Consulter d'autres membres du comité pour des thèmes/idées. Finaliser la liste des avantages de l'adhésion.</p>
                </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
               <div className="card !bg-white shadow-sm border-l-4 border-l-slate-300">
-                 <h4 className="text-label-caps mb-4 opacity-70">Data Ops</h4>
-                 <p className="text-slate-800 text-lg font-medium">Database Cleanup: Damien to clean up existing contacts.</p>
+                 <h4 className="text-label-caps mb-4 opacity-70">OPÉRATIONS DATA</h4>
+                 <p className="text-slate-800 text-lg font-medium">Nettoyage de la Base de Données : Damien doit nettoyer les contacts existants.</p>
               </div>
               <div className="card !bg-white shadow-sm border-b-4 border-b-highlighter">
-                 <h4 className="text-label-caps mb-4 opacity-70">QA Testing</h4>
-                 <p className="text-slate-800 text-lg font-medium">Verify Signup process is fully operational and smooth.</p>
+                 <h4 className="text-label-caps mb-4 opacity-70">TESTS QA</h4>
+                 <p className="text-slate-800 text-lg font-medium">Vérifier que le processus d'inscription est entièrement opérationnel et fluide.</p>
               </div>
             </div>
           </div>
@@ -382,10 +382,10 @@ export default function App() {
           <div className="w-full h-px bg-slate-200 my-12"></div>
           
           <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-slate-500 uppercase tracking-widest font-semibold">
-            <p>© 2026 Silicon Comté. All rights reserved.</p>
+            <p>© 2026 Silicon Comté. TOUS DROITS RÉSERVÉS.</p>
             <div className="flex flex-wrap justify-center gap-6">
-              <span className="opacity-70">Powered by AssoConnect</span>
-              <span className="opacity-70">Delivered via Brevo</span>
+              <span className="opacity-70">PROPULSÉ PAR ASSOCONNECT</span>
+              <span className="opacity-70">DISTRIBUÉ VIA BREVO</span>
             </div>
           </div>
         </div>
