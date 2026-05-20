@@ -25,14 +25,8 @@ export default function App() {
           </div>
           
           <h1 className="headline text-5xl md:text-7xl lg:text-[7rem] font-bold text-slate-900 mix-blend-multiply -ml-1 md:-ml-2">
-            Silicon Comté <br />
-            Newsletter <span className="text-label">Mensuelle</span> <br />
-            <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 mt-6 md:hidden lg:flex lg:mt-8 opacity-90">
-              <span className="bg-highlighter px-4 py-2 font-display text-4xl inline-block shadow-none w-fit border-none text-slate-900">
-                N°1
-              </span>
-              <span className="text-4xl md:text-5xl lg:text-6xl text-slate-700 tracking-tight normal-case">Blueprint de l'Innovation</span>
-            </div>
+            SILICON COMTÉ | <br />
+            NEWSLETTER MENSUELLE
           </h1>
         </div>
       </header>
@@ -65,7 +59,37 @@ export default function App() {
         </div>
       </section>
 
-      {/* Section 2: REPENSER LA NEWSLETTER AVEC L'IA */}
+      {/* Section 3: ACTUALITÉS DU CONSEIL D'ADMINISTRATION */}
+      <section className="py-24 md:py-32 bg-surface-low relative">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="flex items-center gap-6 mb-16">
+            <div className="w-16 h-[2px] bg-label"></div>
+            <h2 className="headline text-4xl md:text-5xl !normal-case text-slate-900">
+              Actualités du <span className="opacity-50">Conseil d'Administration</span>
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 pt-8">
+             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-0 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Relance de l'Annuaire</h3>
+               <p className="text-slate-700 leading-relaxed">Transformation de l'annuaire en observatoire du numérique local. Création automatisée par l'IA et limite stricte à 2 compétences par profil pour plus de clarté.</p>
+             </div>
+             
+             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-16 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Nouveau Réseau de Communication</h3>
+               <p className="text-slate-700 leading-relaxed">Fermeture de l'ancien réseau social. Transition officielle vers Slack pour une communication plus fluide entre adhérents.</p>
+             </div>
+             
+             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-32 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Synergies Écosystème</h3>
+               <p className="text-label-caps mb-4 opacity-70">Projet de Co-adhésion</p>
+               <p className="text-slate-700 leading-relaxed">Mise en place d'une passerelle entre Silicon Comté (terrain), la French Tech BFC (rayonnement) et la Fabrique Numérique Besançon (lien institutionnel).</p>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: REPENSER LA NEWSLETTER AVEC L'IA */}
       <section className="py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto">
         <h2 className="headline text-4xl md:text-6xl font-bold mb-12 max-w-3xl text-slate-900">
           Repenser la newsletter avec l'IA : Un "Super-Pouvoir"
@@ -146,7 +170,7 @@ export default function App() {
                  </div>
                  <div className="pl-4 border-l-2 border-highlighter bg-highlighter/10 p-4 break-words rounded-r-md">
                     <span className="text-yellow-800 font-bold block mb-2 text-xs uppercase tracking-widest">RÉPONSE IA :</span>
-                    <span className="text-slate-800 font-sans text-base">Bubble et FlutterFlow sont excellents. Pour des flux IA intégrés, considérez BuildShip ou Make pour l'automatisation.</span>
+                    <span className="text-slate-800 font-sans text-base">Bubble et FlutterFlow sont excellents. Considérez BuildShip pour l'automatisation IA.</span>
                  </div>
                </div>
             </div>
@@ -174,46 +198,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Section 3: BIENVENUE AUX NOUVEAUX ADHÉRENTS */}
-      <section className="py-24 md:py-32 bg-white relative flex flex-col items-center overflow-hidden">
-        {/* Asymmetrical geometric highlights */}
-        <div className="absolute top-0 right-0 w-[50rem] h-[50rem] bg-highlighter/30 blur-[120px] rounded-full mix-blend-multiply -translate-y-1/2 translate-x-1/4 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-label/10 blur-[100px] rounded-full mix-blend-multiply translate-y-1/2 -translate-x-1/4 pointer-events-none" />
-        
-        <div className="max-w-7xl mx-auto px-6 md:px-12 w-full z-10">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
-            <h2 className="headline text-5xl md:text-7xl max-w-2xl text-slate-900">
-              Bienvenue aux<br/>Nouveaux Adhérents
-            </h2>
-            <div className="bg-surface-low px-6 py-3 border-l-4 border-highlighter">
-              <p className="font-mono text-sm tracking-widest uppercase text-label font-semibold">Q2 — 2026 Cohort</p>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-             {/* Cards with glassmorphism removed for simple surface */}
-             <div className="card shadow-md mt-0 group">
-               <h3 className="headline text-2xl mb-2 !normal-case group-hover:text-label transition-colors">Aurélien Dupuis</h3>
-               <p className="text-xs font-semibold uppercase tracking-widest text-[#006685] mb-6">Fondateur de VisionStream</p>
-               <p className="text-slate-700 text-sm leading-relaxed">Spécialiste de la vision par ordinateur, travaillant sur le contrôle qualité en temps réel pour l'industrie 4.0.</p>
-             </div>
-
-             <div className="card shadow-md mt-0 md:mt-16 group">
-               <h3 className="headline text-2xl mb-2 !normal-case group-hover:text-label transition-colors">Clara Menant</h3>
-               <p className="text-xs font-semibold uppercase tracking-widest text-[#006685] mb-6">Fondatrice de GreenLedger</p>
-               <p className="text-slate-700 text-sm leading-relaxed">Création de solutions de traçabilité carbone grâce à la blockchain pour la logistique européenne.</p>
-             </div>
-
-             <div className="card shadow-md mt-0 lg:mt-32 group">
-               <h3 className="headline text-2xl mb-2 !normal-case group-hover:text-label transition-colors">Samir El-Fahdi</h3>
-               <p className="text-xs font-semibold uppercase tracking-widest text-[#006685] mb-6">CEO @ Nexus Robotics</p>
-               <p className="text-slate-700 text-sm leading-relaxed">Conception d'essaims de robots autonomes pour l'optimisation des flux logistiques hyper-denses.</p>
-             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: POURQUOI NOUS REJOINDRE? */}
+      {/* Section 5: VALORISER L'ADHÉSION */}
       <section className="py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
           <div className="lg:w-5/12 static lg:sticky top-12">
@@ -229,17 +214,15 @@ export default function App() {
           
           <div className="lg:w-7/12 flex flex-col gap-8">
             {[ 
-              { id: '01', title: 'Badge Adhérent exclusif', highlight: true },
-              { id: '02', title: 'Référencement dans l\'annuaire', sub: '(optimisation SEO & backlinks profils)' },
-              { id: '03', title: 'Accueillir un Digital Apéro', sub: 'Faites découvrir vos locaux et votre vision' },
-              { id: '04', title: 'Pot de Rentrée réservé' },
-              { id: '05', title: 'Réductions événements' }
+              { id: '01', title: 'Badge Adhérent exclusif & Backlink annuaire.', highlight: true },
+              { id: '02', title: 'Opportunité d\'accueillir un "Digital Apéro" dans vos locaux.' },
+              { id: '03', title: 'Accès au Pot de Rentrée réservé aux membres.' },
+              { id: '04', title: 'Réductions sur les événements et accès au nouveau Slack.' }
             ].map((item, i) => (
-              <div key={i} className="flex gap-6 items-start group bg-white shadow-sm p-6">
+              <div key={i} className="flex gap-6 items-start group bg-white shadow-sm p-6 relative z-10 hover:-translate-y-1 transition-transform duration-300">
                 <div className="headline text-3xl text-slate-300 font-bold pt-1 !normal-case">{item.id}</div>
                 <div>
                   <h4 className="headline text-2xl text-slate-900 group-hover:text-label transition-colors !normal-case">{item.title}</h4>
-                  {item.sub && <p className="text-slate-500 text-sm mt-2">{item.sub}</p>}
                   {item.highlight && (
                     <div className="mt-4 chip border border-black/5">
                        <CheckCircle2 size={12} className="text-label mr-1" />
@@ -249,51 +232,6 @@ export default function App() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: SETUP IMMÉDIAT: Plan de Lancement */}
-      <section className="py-24 md:py-32 px-6 md:px-12 bg-surface-low">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex items-center gap-6 mb-16">
-            <div className="w-16 h-[2px] bg-label"></div>
-            <h2 className="headline text-4xl md:text-5xl !normal-case">Setup Immédiat : <span className="opacity-50">Plan de Lancement</span></h2>
-          </div>
-          
-          <div className="space-y-8">
-            <div className="card !bg-white flex flex-col md:flex-row gap-8 items-start md:items-center hover:shadow-xl transition-shadow duration-300 group">
-               <div className="absolute left-0 top-0 bottom-0 w-1 bg-highlighter transform -translate-x-full group-hover:translate-x-0 transition-transform"></div>
-               <div className="w-20 h-20 shrink-0 bg-surface-low flex items-center justify-center font-display text-3xl font-bold text-label bg-tertiary rounded-xl">P1</div>
-               <div className="flex-1">
-                 <h3 className="headline text-2xl mb-3 !normal-case">Rôles, Outils et Configuration</h3>
-                 <p className="text-slate-600 mb-6 text-lg font-light">Nicholas G. Lead, Design Visuel FX ? Configuration des plateformes d'intégration en cours.</p>
-                 <div className="flex gap-3">
-                   <span className="chip">AssoConnect</span>
-                   <span className="chip">Brevo</span>
-                 </div>
-               </div>
-            </div>
-            
-            <div className="card !bg-white flex flex-col md:flex-row gap-8 items-start md:items-center hover:shadow-xl transition-shadow duration-300 group">
-               <div className="absolute left-0 top-0 bottom-0 w-1 bg-highlighter transform -translate-x-full group-hover:translate-x-0 transition-transform"></div>
-               <div className="w-20 h-20 shrink-0 bg-surface-low flex items-center justify-center font-display text-3xl font-bold text-label bg-tertiary rounded-xl">P2</div>
-               <div className="flex-1">
-                 <h3 className="headline text-2xl mb-3 !normal-case">Prochaines Étapes & Coordination</h3>
-                 <p className="text-slate-600 text-lg font-light">Consulter d'autres membres du comité pour des thèmes/idées. Finaliser la liste des avantages de l'adhésion.</p>
-               </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
-              <div className="card !bg-white shadow-sm border-l-4 border-l-slate-300">
-                 <h4 className="text-label-caps mb-4 opacity-70">OPÉRATIONS DATA</h4>
-                 <p className="text-slate-800 text-lg font-medium">Nettoyage de la Base de Données : Damien doit nettoyer les contacts existants.</p>
-              </div>
-              <div className="card !bg-white shadow-sm border-b-4 border-b-highlighter">
-                 <h4 className="text-label-caps mb-4 opacity-70">TESTS QA</h4>
-                 <p className="text-slate-800 text-lg font-medium">Vérifier que le processus d'inscription est entièrement opérationnel et fluide.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -314,7 +252,7 @@ export default function App() {
                 <div>
                   <h3 className="headline text-3xl mb-4 text-slate-900">DIGITAL APÉRO</h3>
                   <span className="chip mb-4">IA Agentique & Éthique</span>
-                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Challenges et opportunités pour les systèmes IA agentiques éthiques."</strong><br />Une discussion profonde sur le futur de l'autonomie machine en Franche-Comté.</p>
+                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Challenges et opportunités pour les systèmes IA agentiques éthiques."</strong><br />Une discussion profonde sur le futur de l'autonomie machine.</p>
                 </div>
              </div>
           </div>
@@ -323,12 +261,12 @@ export default function App() {
              <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-label shadow-[0_0_0_8px_#fcf9f8] group-hover:bg-highlighter transition-colors duration-300"></div>
              <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-start">
                 <div className="shrink-0 md:-ml-32 mt-1 md:text-right md:w-20">
-                  <span className="font-display text-2xl font-bold text-slate-400 block leading-tight">JUIN <br className="hidden md:block" /><span className="text-slate-900">XX</span></span>
+                  <span className="font-display text-2xl font-bold text-slate-400 block leading-tight">JUIN <br className="hidden md:block" /><span className="text-slate-900 text-xl">Mensuel</span></span>
                 </div>
                 <div>
                   <h3 className="headline text-3xl mb-4 text-slate-900">CAFÉS IA</h3>
                   <span className="chip mb-4">Au Pixel</span>
-                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"RDV régulier tous les mois au Pixel."</strong><br />Un moment d'échange convivial autour des avancées locales en intelligence artificielle.</p>
+                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"RDV régulier tous les mois au Pixel."</strong><br />Un moment d'échange convivial autour des avancées locales en IA. Venez avec vos prompts !</p>
                 </div>
              </div>
           </div>
@@ -342,7 +280,7 @@ export default function App() {
                 <div>
                    <h3 className="headline text-3xl mb-4 text-slate-900">AFTERWORK NETWORKING</h3>
                    <span className="chip mb-4 border border-label/20">Partenaire BFC Numérique</span>
-                   <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Dans un cadre original..."</strong><br />Célébrons la force de notre écosystème en toute décontraction pour clore le trimestre.</p>
+                   <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed">Célébrons la force de notre écosystème en toute décontraction pour clore le trimestre.</p>
                 </div>
              </div>
           </div>
