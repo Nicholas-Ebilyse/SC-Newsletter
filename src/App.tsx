@@ -10,23 +10,21 @@ export default function App() {
   return (
     <div className="font-sans min-h-screen selection:bg-highlighter selection:text-black scroll-smooth">
       {/* HEADER */}
-      <header className="relative pt-24 pb-32 px-6 md:px-12 overflow-hidden bg-[url('./illustration-home-new.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px] z-0" />
+      <header className="relative pt-24 pb-32 px-6 md:px-12 overflow-hidden bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./illustration-home-new.png')] bg-cover bg-center text-white">
+        <div className="absolute inset-0 z-0" />
         {/* Asymmetrical decorative bg element */}
-        <div className="absolute top-0 right-0 w-full md:w-2/3 h-[120%] bg-surface-low/80 -skew-x-12 z-0 origin-top-right blur-3xl opacity-50" />
+        <div className="absolute top-0 right-0 w-full md:w-2/3 h-[120%] bg-surface-low/10 -skew-x-12 z-0 origin-top-right blur-3xl opacity-50" />
         
         <div className="flex flex-col gap-8 md:gap-16 relative z-10 max-w-7xl mx-auto">
-          <div className="flex flex-wrap gap-4 md:gap-8 items-center text-label-caps text-xs md:text-sm font-semibold">
+          <div className="flex flex-wrap gap-4 md:gap-8 items-center text-label-caps text-xs md:text-sm font-semibold text-white/90">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-highlighter inline-block shadow-sm"></span>
-              EDITION N°3
+              EDITION N°3 | MAI 2026
             </span>
-            <span>TROISIÈME ÉDITION</span>
-            <span>ÉCOSYSTÈME TECH BFC</span>
           </div>
           
-          <h1 className="headline text-5xl md:text-7xl lg:text-[7rem] font-bold text-slate-900 mix-blend-multiply -ml-1 md:-ml-2">
-            <img src="./logo-siliconcomte.png" alt="Silicon Comté Logo" className="w-full max-w-[250px]" />
+          <h1 className="headline text-5xl md:text-7xl lg:text-[7rem] font-bold -ml-1 md:-ml-2">
+            <img src="./logo-siliconcomte.png" alt="Silicon Comté" style={{ maxWidth: '250px', marginBottom: '1rem' }} className="w-full" />
           </h1>
         </div>
       </header>
@@ -49,10 +47,10 @@ export default function App() {
             <h2 className="headline text-4xl md:text-5xl mb-10 text-slate-900 !normal-case">ÉDITORIAL (Le Mot du Président)</h2>
             <div className="text-slate-600 leading-relaxed max-w-2xl text-base md:text-lg space-y-6">
               <p className="text-xl md:text-2xl font-light text-slate-900 italic tracking-tight border-l-4 border-highlighter pl-6 py-2">
-                "Apprendre plus pour mieux valoriser."
+                "Apprenons à nous connaître pour mieux nous valoriser !"
               </p>
               <p>
-                L'association Silicon Comté se redynamise. Notre objectif est de fédérer l'écosystème local en nous concentrant sur l'événementiel et l'innovation numérique. Apprenons à nous connaître pour mieux nous valoriser, en partageant nos expertises à travers nos ateliers et nos rencontres.
+                L'association Silicon Comté se redynamise avec une énergie nouvelle. Notre priorité est claire : fédérer l'écosystème numérique local en remettant l'événementiel, le partage d'expertise et l'innovation au cœur de nos actions. Qu'il s'agisse de nos Digital Apéros ou de nos nouveaux ateliers thématiques, c'est en nous réunissant que nous créerons de la valeur pour notre territoire.
               </p>
             </div>
           </div>
@@ -70,24 +68,22 @@ export default function App() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 pt-8">
-             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-0 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
-               <Database className="w-8 h-8 text-secondary mb-6 opacity-80" />
-               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Annuaire des compétences</h3>
-               <p className="text-slate-700 leading-relaxed">Transformation de notre outil en un véritable observatoire du numérique local. Sa création est désormais automatisée par l'IA, avec une limite stricte de deux compétences par profil pour garantir une clarté maximale aux recruteurs.</p>
+             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-0 group hover:-translate-y-2 transition-transform duration-300 relative z-10 backdrop-blur-md bg-white/70">
+               <Database color="#006685" className="w-8 h-8 mb-6 opacity-90" />
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Annuaire des Compétences</h3>
+               <p className="text-slate-700 leading-relaxed">Transformation de notre outil en un véritable observatoire du numérique local. Sa création est désormais automatisée par l'IA, avec une limite stricte de deux compétences par profil pour garantir une clarté maximale aux recruteurs. Nous intégrons également une vérification API avec le SIRET pour certifier l'ancrage en Franche-Comté.</p>
              </div>
              
-             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-16 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
-               <Network className="w-8 h-8 text-secondary mb-6 opacity-80" />
-               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">La force du collectif</h3>
-               <p className="text-label-caps mb-4 opacity-70">L'architecture de la Co-Adhésion</p>
-               <p className="text-slate-700 leading-relaxed">Mise en place d'une passerelle unique reliant trois acteurs majeurs : Silicon Comté pour l'animation de terrain, la French Tech BFC pour le rayonnement national, et la Fabrique Numérique pour le lien social et institutionnel.</p>
+             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-16 group hover:-translate-y-2 transition-transform duration-300 relative z-10 backdrop-blur-md bg-white/70">
+               <Network color="#006685" className="w-8 h-8 mb-6 opacity-90" />
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">La Force du Collectif : La Co-Adhésion</h3>
+               <p className="text-slate-700 leading-relaxed">Mise en place d'une passerelle unique reliant trois acteurs majeurs : Silicon Comté pour l'animation de terrain, la French Tech BFC pour le rayonnement national, et la Fabrique Numérique pour le lien social et institutionnel. Une adhésion simplifiée pour accéder aux trois structures.</p>
              </div>
              
-             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-32 group hover:-translate-y-2 transition-transform duration-300 relative z-10">
-               <Megaphone className="w-8 h-8 text-secondary mb-6 opacity-80" />
-               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Nouvelle Dynamique</h3>
-               <p className="text-label-caps mb-4 opacity-70">De Communication</p>
-               <p className="text-slate-700 leading-relaxed">Lancement de notre nouveau Blog pour relayer l'expertise de nos membres et centralisation de notre communauté sur notre page LinkedIn officielle.</p>
+             <div className="card !bg-white shadow-[0_8px_32px_rgba(0,0,0,0.03)] md:mt-32 group hover:-translate-y-2 transition-transform duration-300 relative z-10 backdrop-blur-md bg-white/70">
+               <Megaphone color="#fbd800" className="w-8 h-8 mb-6 opacity-90" />
+               <h3 className="headline text-2xl mb-4 !normal-case text-slate-900">Nouvelle Dynamique de Communication</h3>
+               <p className="text-slate-700 leading-relaxed">Fermeture de l'ancien réseau social pour centraliser notre communauté sur notre page LinkedIn officielle. Lancement de notre nouveau Blog pour relayer l'expertise de nos membres, avec un premier témoignage très attendu sur les coulisses de cette newsletter.</p>
              </div>
           </div>
         </div>
@@ -105,7 +101,7 @@ export default function App() {
              <div className="absolute top-0 right-0 w-32 h-32 bg-highlighter/10 blur-3xl -z-10 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
              <div className="flex justify-between items-start mb-24 relative z-10">
                <span className="text-label-caps text-xs font-bold opacity-60">Concept 01</span>
-               <Brain strokeWidth={1.5} className="text-label opacity-70 w-6 h-6" />
+               <Brain color="#fbd800" strokeWidth={1.5} className="opacity-90 w-8 h-8" />
              </div>
              <h3 className="headline text-3xl font-bold mb-6 text-slate-900 !normal-case">Prompt du Mois</h3>
              <div className="text-slate-700 italic text-sm bg-white/80 p-5 border-none shadow-none relative z-10">
@@ -244,41 +240,41 @@ export default function App() {
       <section className="py-24 md:py-32 px-6 md:px-12 max-w-5xl mx-auto relative content-center">
         <h2 className="headline text-5xl md:text-6xl mb-20 text-center md:text-left">Événements <br className="hidden md:block" />à ne pas manquer</h2>
         
-        <div className="relative border-l-2 border-slate-200 ml-4 md:ml-[4.5rem] space-y-20 py-8">
+        <div className="relative border-l-2 border-slate-200 ml-4 md:ml-[4.5rem] space-y-20 py-8 z-0">
           
           <div className="relative pl-12 md:pl-20 group">
              {/* timeline dot */}
-             <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-label shadow-[0_0_0_8px_#fcf9f8] group-hover:bg-highlighter transition-colors duration-300"></div>
+             <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-label shadow-[0_0_0_8px_#fcf9f8] group-hover:bg-highlighter transition-colors duration-300 z-0"></div>
              <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-start">
-                <div className="shrink-0 md:-ml-32 mt-1 md:text-right md:w-20">
+                <div className="shrink-0 md:-ml-[5.5rem] mt-1 md:text-right md:w-24 relative z-10 bg-[#fcf9f8] p-2">
                   <span className="font-display text-2xl font-bold text-slate-400 block leading-tight">AVR <br className="hidden md:block" /><span className="text-slate-900">15</span></span>
                 </div>
                 <div>
                   <h3 className="headline text-3xl mb-4 text-slate-900">DIGITAL APÉRO</h3>
                   <span className="chip mb-4">IA Agentique & Éthique</span>
-                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Challenges et opportunités pour les systèmes IA agentiques éthiques."</strong><br />Lieu : Le Comptoir Général (14 Rue d'Alsace). Format : Conférence de 30–45 minutes pour une trentaine de personnes, suivie d'échanges.</p>
+                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Challenges et opportunités pour les systèmes IA agentiques éthiques."</strong><br />Lieu : Le Comptoir Général. Format : Conférence de 30–45 minutes pour une trentaine de personnes, suivie d'un temps d'échange.</p>
                 </div>
              </div>
           </div>
           
           <div className="relative pl-12 md:pl-20 group">
-             <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-label shadow-[0_0_0_8px_#fcf9f8] group-hover:bg-highlighter transition-colors duration-300"></div>
+             <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-label shadow-[0_0_0_8px_#fcf9f8] group-hover:bg-highlighter transition-colors duration-300 z-0"></div>
              <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-start">
-                <div className="shrink-0 md:-ml-32 mt-1 md:text-right md:w-20">
+                <div className="shrink-0 md:-ml-[5.5rem] mt-1 md:text-right md:w-24 relative z-10 bg-[#fcf9f8] p-2">
                   <span className="font-display text-2xl font-bold text-slate-400 block leading-tight">JUIN <br className="hidden md:block" /><span className="text-slate-900 text-xl">Mensuel</span></span>
                 </div>
                 <div>
                   <h3 className="headline text-3xl mb-4 text-slate-900">CAFÉS IA</h3>
                   <span className="chip mb-4">Au Pixel</span>
-                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Rendez-vous mensuel au Pixel."</strong><br />Format de 45 minutes à 1 heure pour échanger autour de l'intelligence artificielle, tester des outils et partager vos meilleurs prompts entre adhérents.</p>
+                  <p className="text-slate-600 max-w-xl text-lg font-light leading-relaxed"><strong className="font-semibold text-slate-800">"Rendez-vous mensuel au Pixel."</strong><br />Format de 45 min à 1h pour échanger autour de l'intelligence artificielle, tester des outils et partager vos meilleurs prompts.</p>
                 </div>
              </div>
           </div>
           
           <div className="relative pl-12 md:pl-20 group">
-             <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-label shadow-[0_0_0_8px_#fcf9f8] group-hover:bg-highlighter transition-colors duration-300"></div>
+             <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-label shadow-[0_0_0_8px_#fcf9f8] group-hover:bg-highlighter transition-colors duration-300 z-0"></div>
              <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-start">
-                <div className="shrink-0 md:-ml-32 mt-1 md:text-right md:w-20">
+                <div className="shrink-0 md:-ml-[5.5rem] mt-1 md:text-right md:w-24 relative z-10 bg-[#fcf9f8] p-2">
                   <span className="font-display text-2xl font-bold text-slate-400 block leading-tight">JUIN <br className="hidden md:block" /><span className="text-slate-900">20</span></span>
                 </div>
                 <div>
